@@ -1,0 +1,7 @@
+---
+- type: replace
+  path: /releases/name=eirini
+  value:
+    name: eirini
+    version: create
+    url: file://((eirini_release_dir))
