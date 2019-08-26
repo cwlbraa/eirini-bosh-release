@@ -1,8 +1,8 @@
 # Add eirini
 - type: replace
-  path: /instance_groups/-
+  path: /instance_groups/name=eirini?
   value:
-    name: opi
+    name: eirini
     release: eirini
     azs: [z1]
     instances: 1
@@ -131,7 +131,7 @@
 
 - type: replace
   path: /releases/name=bits-service/version?
-  value: latest
+  value: 2.28.0
 - type: replace
   path: /releases/name=eirini?/version?
   value: latest
